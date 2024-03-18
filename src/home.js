@@ -2,6 +2,8 @@ const body = document.body
 const content = document.getElementById('content')
 
 export default function Home() {
+  content.innerHTML = ''
+  
   const name = document.createElement('h1')
   const honeycomb = document.createElement('img')
   const review_inner = document.createElement('div')

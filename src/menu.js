@@ -2,6 +2,8 @@ const body = document.body
 const content = document.getElementById('content')
 
 export default function Menu() {
+  content.innerHTML = ''
+  
   const menuHeading_inner = document.createElement('div')
   const menuHeading_outer = document.createElement('div')
   const bevHeading_inner = document.createElement('div')

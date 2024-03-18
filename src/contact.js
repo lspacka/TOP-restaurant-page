@@ -2,6 +2,8 @@ const body = document.body
 const content = document.getElementById('content')
 
 export default function Contact() {
+  content.innerHTML = ''
+  
   const heading_inner = document.createElement('div')
   const heading_outer = document.createElement('div')
   const mama_inner = document.createElement('div')
