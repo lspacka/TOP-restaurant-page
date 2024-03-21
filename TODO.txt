@@ -1,0 +1,3 @@
+- style box headings
+- get menu images
+- line up boxes in home

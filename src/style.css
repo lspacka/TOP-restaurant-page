@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'BetterPixels';
+  src: url('/font/BetterPixels.ttf');
+}
+
+:root {
+  --yellow: #FFC60B;
+  --green: #85AE85;
+  --light-blue: #0A95FF;
+  --dark-blue: #230AFF;
+  --purple: #7766FF;
+  --lilac: #AAA0FF;
+  --dark-orange: #df880a;
+  --chocolate: #c16a08;
+  --khaki: #ffde73;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/images/forestbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'BetterPixels'
+}
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  background-color: rgba(115, 255, 180, 0.5);
+  margin-bottom: 50px;
+}
+
+button {
+  margin-right: 5px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  color:rgb(254, 204, 0);
+  background: #035218;
+  font-family: 'BetterPixels';
+  font-size: 1.3rem;
+}
+
+button:hover {
+  background: rgba(16, 147, 51, 0.8);
+  cursor: pointer;
+  color: rgb(139, 255, 7);
+  /* color: rgb(180, 255, 29); */
+  font-weight: bold;
+}
+
+#content {
+  background-color: rgba(242, 251, 162, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 90.9%;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.heading {
+  font-size: 3.4rem;
+  line-height: 0.8;
+  margin-bottom: 60px;
+  background-color: rgb(255, 198, 11);
+  /* width: fit-content; */
+  text-align: center;
+  color:#613b06;
+}
+
+.home-info {
+  background:rgba(108, 231, 205, 0.5);
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-radius: 10px;
+}
+
+.menu-info {
+  background:rgba(108, 231, 205, 0.5);
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.contact-info {
+  background:rgba(108, 231, 205, 0.5);
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-radius: 10px;
+}
+
+#review p:nth-of-type(2) {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+#hours > h3,
+#location > h3 {
+  margin-left: 20px;
+}
+
+#hours > p,
+#location > p {
+  margin-left: 35px;
+}
+
+/*  to prevent ugly overblown background on menu page  */
+
+/* @media screen and (min-height: 300vh) {
+  body {
+    background-size: 50vh;
+  }
+} */
