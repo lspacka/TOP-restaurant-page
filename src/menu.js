@@ -25,9 +25,9 @@ export default function Menu() {
   const mainDish_inner8 = document.createElement('div')
 
   menuHeading_inner.classList.add('heading')
-  bevHeading_inner.classList.add('heading')
-  sidesHeading_inner.classList.add('heading')
-  mainHeading_inner.classList.add('heading')
+  bevHeading_inner.classList.add('menu-heading')
+  sidesHeading_inner.classList.add('menu-heading')
+  mainHeading_inner.classList.add('menu-heading')
   
   menuHeading_inner.textContent = "Menu"
   bevHeading_inner.textContent = "Beverages"

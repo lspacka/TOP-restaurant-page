@@ -1,3 +1,8 @@
-- style box headings
-- get menu images
-- line up boxes in home
++ fix menu entries
++ line up boxes in home
++ desktop layout
+- fix colors
+- rename vars
+- shorter/sticky header
+- get/set menu and bear/bee images
+- scrolling background

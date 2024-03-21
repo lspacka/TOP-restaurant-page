@@ -1,3 +1,4 @@
+/* This font doesnt work very well tbh */
 @font-face {
   font-family: 'BetterPixels';
   src: url('/font/BetterPixels.ttf');
@@ -25,8 +26,10 @@ body {
   background: url(/images/forestbg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
-  font-family: 'BetterPixels'
+  font-family: 'BetterPixels';
+  color:#513003;
 }
 
 header {
@@ -34,9 +37,10 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 10px;
-  background-color: rgba(115, 255, 180, 0.5);
   margin-bottom: 50px;
+  background-color: rgba(87, 245, 161, 0.4);
+  /* margin-bottom: 50px; */
+  border: none;
 }
 
 button {
@@ -52,7 +56,7 @@ button {
 }
 
 button:hover {
-  background: rgba(16, 147, 51, 0.8);
+  background: rgba(16, 147, 51, 0.83);
   cursor: pointer;
   color: rgb(139, 255, 7);
   /* color: rgb(180, 255, 29); */
@@ -60,7 +64,7 @@ button:hover {
 }
 
 #content {
-  background-color: rgba(242, 251, 162, 0.5);
+  background-color: rgba(242, 251, 162, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,58 +75,137 @@ button:hover {
 }
 
 .heading {
-  font-size: 3.4rem;
+  font-size: 3rem;
   line-height: 0.8;
   margin-bottom: 60px;
-  background-color: rgb(255, 198, 11);
-  /* width: fit-content; */
+  /* background-color: rgb(255, 198, 11); */
+  background-color: rgba(255, 218, 11, 0.9);
+  text-align: center;
+  color:#5b3807;
+  border-radius: 13px;
+  padding: 26px;
+}
+
+.menu-heading {
+  font-size: 2.6rem;
+  line-height: 0.8;
+  margin-top: 20px;;
+  margin-bottom: 30px;
+  background-color: rgba(253, 253, 22, 0.6);
   text-align: center;
   color:#613b06;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
 }
 
 .home-info {
-  background:rgba(108, 231, 205, 0.5);
+  background:rgba(108, 231, 205, 0.7);
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 25px;
   font-size: 1.5rem;
   font-weight: 100;
   border-radius: 10px;
+  min-width: 333px;
 }
 
-.menu-info {
-  background:rgba(108, 231, 205, 0.5);
-  margin-bottom: 40px;
-  padding: 20px;
-  font-size: 1.5rem;
-  font-weight: 100;
-  border-radius: 10px;
-  width: 90%;
-}
-
-.contact-info {
-  background:rgba(108, 231, 205, 0.5);
-  margin-bottom: 40px;
-  padding: 20px;
-  font-size: 1.5rem;
-  font-weight: 100;
-  border-radius: 10px;
-}
-
-#review p:nth-of-type(2) {
+.home-info p:nth-of-type(2) {
   margin-top: 10px;
   margin-left: 20px;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
-#hours > h3,
-#location > h3 {
+.home-info > h3 {
   margin-left: 20px;
+  font-size: 2rem;
 }
 
 #hours > p,
 #location > p {
-  margin-left: 35px;
+  margin: 10px 0 0 35px;
+} 
+
+.menu-info {
+  background:rgba(108, 231, 205, 0.7);
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-radius: 10px;
+  /* width: 90%; */
+  text-align: center;
+}
+
+.menu-info p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-info p:nth-of-type(2) {
+  margin: 15px 0 20px 0;
+}
+
+.menu-info p:nth-of-type(3) {
+  /* transform: translateX(-110px); */
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.contact-info {
+  background:rgba(108, 231, 205, 0.7);
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-radius: 10px;
+}
+
+.contact-info p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 100px;
+    /* width: 35%;
+    margin: 0 auto 50px;
+    border-radius: 0 0 10px 10px; */
+  }
+  button {
+    margin-right: 15px;
+    width: 100px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+  #content {
+    width: 64%;
+  }
+  .heading {
+    font-size: 3.5rem;
+    padding: 10px 30px 10px 30px;
+  }
+  .home-info,
+  .menu-info,
+  .contact-info {
+    width: 400px;
+    font-size: 1.9rem;
+  }
+  .home-info p:nth-of-type(2) {
+    font-size: 2rem;
+  }
+  .menu-info p:nth-of-type(1),
+  .contact-info p:nth-of-type(1) {
+    font-size: 2.4rem;
+  }
+  .menu-heading {
+    font-size: 2.83rem;
+  }
 }
 
 /*  to prevent ugly overblown background on menu page  */
