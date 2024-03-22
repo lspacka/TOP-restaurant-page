@@ -7,7 +7,7 @@ const menu_btn = document.getElementById('menu-btn')
 const contact_btn = document.getElementById('contact-btn')
 let clicked = false
 
-if (!clicked) Menu()
+if (!clicked) Home()
 
 home_btn.addEventListener('click', () => {
   Home()

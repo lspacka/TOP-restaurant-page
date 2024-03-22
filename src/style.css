@@ -1,4 +1,6 @@
-/* This font doesnt work very well tbh */
+/*  This font doesnt work very well tbh 
+    also, spent quite some time looking for pixel art for the menu, but no dice.
+*/
 @font-face {
   font-family: 'BetterPixels';
   src: url('/font/BetterPixels.ttf');
@@ -38,8 +40,9 @@ header {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 50px;
-  background-color: rgba(87, 245, 161, 0.4);
-  /* margin-bottom: 50px; */
+  background-color: rgba(9, 255, 149, 0.2);
+  /* position: sticky;
+  top: 0; */
   border: none;
 }
 
@@ -59,7 +62,6 @@ button:hover {
   background: rgba(16, 147, 51, 0.83);
   cursor: pointer;
   color: rgb(139, 255, 7);
-  /* color: rgb(180, 255, 29); */
   font-weight: bold;
 }
 
@@ -78,7 +80,6 @@ button:hover {
   font-size: 3rem;
   line-height: 0.8;
   margin-bottom: 60px;
-  /* background-color: rgb(255, 198, 11); */
   background-color: rgba(255, 218, 11, 0.9);
   text-align: center;
   color:#5b3807;
@@ -132,7 +133,6 @@ button:hover {
   font-size: 1.5rem;
   font-weight: 100;
   border-radius: 10px;
-  /* width: 90%; */
   text-align: center;
 }
 
@@ -146,7 +146,6 @@ button:hover {
 }
 
 .menu-info p:nth-of-type(3) {
-  /* transform: translateX(-110px); */
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -173,9 +172,6 @@ button:hover {
 @media screen and (min-width: 600px) {
   header {
     height: 100px;
-    /* width: 35%;
-    margin: 0 auto 50px;
-    border-radius: 0 0 10px 10px; */
   }
   button {
     margin-right: 15px;
@@ -190,6 +186,9 @@ button:hover {
     font-size: 3.5rem;
     padding: 10px 30px 10px 30px;
   }
+  .menu-info {
+    height: fit-content !important;
+  }
   .home-info,
   .menu-info,
   .contact-info {
@@ -203,15 +202,10 @@ button:hover {
   .contact-info p:nth-of-type(1) {
     font-size: 2.4rem;
   }
+  .menu-info p:nth-of-type(3) {
+    font-size: 2.6rem;
+  }
   .menu-heading {
     font-size: 2.83rem;
   }
 }
-
-/*  to prevent ugly overblown background on menu page  */
-
-/* @media screen and (min-height: 300vh) {
-  body {
-    background-size: 50vh;
-  }
-} */
