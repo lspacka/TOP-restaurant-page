@@ -2,7 +2,7 @@
 
 This is my version of [Beary's breakfast bar](https://web.archive.org/web/20221024060550/https://eckben.github.io/bearysBreakfastBar/)
 
-[Live site]()
+[Live site](https://lspacka.github.io/TOP-restaurant-page/)
 
 ### Built With
 - HTML
