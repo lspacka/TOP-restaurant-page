@@ -7,6 +7,7 @@ This is my version of [Beary's breakfast bar](https://web.archive.org/web/202210
 ### Built With
 - HTML
 - CSS
+- JavaScript
 
 Font - [BetterPixels](https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=102)
 
